@@ -1,0 +1,197 @@
+2025-02-02 21:27:37,457 - INFO - 
+--- Expected Scenario ---
+2025-02-02 21:27:37,479 - INFO - LP Status: Optimal
+2025-02-02 21:27:37,480 - INFO - Earliest Schedule (Start, Finish):
+2025-02-02 21:27:37,480 - INFO -   A: Start = 0.0, Finish = 20.0
+2025-02-02 21:27:37,480 - INFO -   B: Start = 0.0, Finish = 30.0
+2025-02-02 21:27:37,480 - INFO -   C: Start = 20.0, Finish = 36.0
+2025-02-02 21:27:37,480 - INFO -   D1: Start = 20.0, Finish = 60.0
+2025-02-02 21:27:37,480 - INFO -   D2: Start = 60.0, Finish = 120.0
+2025-02-02 21:27:37,480 - INFO -   D3: Start = 60.0, Finish = 110.0
+2025-02-02 21:27:37,481 - INFO -   D4: Start = 120.0, Finish = 280.0
+2025-02-02 21:27:37,481 - INFO -   D5: Start = 280.0, Finish = 320.0
+2025-02-02 21:27:37,481 - INFO -   D6: Start = 280.0, Finish = 340.0
+2025-02-02 21:27:37,481 - INFO -   D7: Start = 340.0, Finish = 420.0
+2025-02-02 21:27:37,481 - INFO -   D8: Start = 420.0, Finish = 440.0
+2025-02-02 21:27:37,481 - INFO -   E: Start = 36.0, Finish = 60.0
+2025-02-02 21:27:37,481 - INFO -   F: Start = 440.0, Finish = 480.0
+2025-02-02 21:27:37,481 - INFO -   G: Start = 440.0, Finish = 490.0
+2025-02-02 21:27:37,481 - INFO -   H: Start = 490.0, Finish = 520.0
+2025-02-02 21:27:37,481 - INFO - Project Completion Time: 520.0
+2025-02-02 21:27:37,481 - INFO - 
+Latest Start (LS), Latest Finish (LF), and Slack:
+2025-02-02 21:27:37,481 - INFO -   A: LS = 0.0, LF = 20.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   B: LS = 396.0, LF = 426.0, Slack = 396.0
+2025-02-02 21:27:37,481 - INFO -   C: LS = 410.0, LF = 426.0, Slack = 390.0
+2025-02-02 21:27:37,481 - INFO -   D1: LS = 20.0, LF = 60.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   D2: LS = 60.0, LF = 120.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   D3: LS = 70.0, LF = 120.0, Slack = 10.0
+2025-02-02 21:27:37,481 - INFO -   D4: LS = 120.0, LF = 280.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   D5: LS = 380.0, LF = 420.0, Slack = 100.0
+2025-02-02 21:27:37,481 - INFO -   D6: LS = 280.0, LF = 340.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   D7: LS = 340.0, LF = 420.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   D8: LS = 420.0, LF = 440.0, Slack = 0.0
+2025-02-02 21:27:37,481 - INFO -   E: LS = 426.0, LF = 450.0, Slack = 390.0
+2025-02-02 21:27:37,481 - INFO -   F: LS = 450.0, LF = 490.0, Slack = 10.0
+2025-02-02 21:27:37,482 - INFO -   G: LS = 440.0, LF = 490.0, Slack = 0.0
+2025-02-02 21:27:37,482 - INFO -   H: LS = 490.0, LF = 520.0, Slack = 0.0
+2025-02-02 21:27:37,482 - INFO - 
+Critical Path:
+2025-02-02 21:27:37,482 - INFO -   A -> D1 -> D2 -> D4 -> D6 -> D7 -> D8 -> G -> H
+2025-02-02 21:27:37,482 - INFO - 
+Cost Details (per task):
+2025-02-02 21:27:37,482 - INFO -   A: Cost = $2000.00
+2025-02-02 21:27:37,482 - INFO -   B: Cost = $3000.00
+2025-02-02 21:27:37,482 - INFO -   C: Cost = $1600.00
+2025-02-02 21:27:37,482 - INFO -   D1: Cost = $8000.00
+2025-02-02 21:27:37,482 - INFO -   D2: Cost = $6000.00
+2025-02-02 21:27:37,482 - INFO -   D3: Cost = $10000.00
+2025-02-02 21:27:37,482 - INFO -   D4: Cost = $32000.00
+2025-02-02 21:27:37,482 - INFO -   D5: Cost = $4000.00
+2025-02-02 21:27:37,482 - INFO -   D6: Cost = $6000.00
+2025-02-02 21:27:37,482 - INFO -   D7: Cost = $8000.00
+2025-02-02 21:27:37,482 - INFO -   D8: Cost = $2000.00
+2025-02-02 21:27:37,482 - INFO -   E: Cost = $4800.00
+2025-02-02 21:27:37,482 - INFO -   F: Cost = $8000.00
+2025-02-02 21:27:37,482 - INFO -   G: Cost = $10000.00
+2025-02-02 21:27:37,482 - INFO -   H: Cost = $3000.00
+2025-02-02 21:27:37,482 - INFO - Total Project Cost: $108400.0
+2025-02-02 21:27:37,482 - INFO - 
+Peak Worker Requirements (by Role):
+2025-02-02 21:27:37,482 - INFO -   projectManager: 2 concurrent workers
+2025-02-02 21:27:37,482 - INFO -   frontendDeveloper: 1 concurrent workers
+2025-02-02 21:27:37,482 - INFO -   backendDeveloper: 2 concurrent workers
+2025-02-02 21:27:37,482 - INFO -   dataEngineer: 2 concurrent workers
+2025-02-02 21:27:37,482 - INFO -   dataScientist: 1 concurrent workers
+2025-02-02 21:27:37,482 - INFO - 
+--- Best Scenario ---
+2025-02-02 21:27:37,501 - INFO - LP Status: Optimal
+2025-02-02 21:27:37,501 - INFO - Earliest Schedule (Start, Finish):
+2025-02-02 21:27:37,501 - INFO -   A: Start = 0.0, Finish = 10.0
+2025-02-02 21:27:37,501 - INFO -   B: Start = 0.0, Finish = 15.0
+2025-02-02 21:27:37,501 - INFO -   C: Start = 10.0, Finish = 18.0
+2025-02-02 21:27:37,501 - INFO -   D1: Start = 10.0, Finish = 30.0
+2025-02-02 21:27:37,501 - INFO -   D2: Start = 30.0, Finish = 60.0
+2025-02-02 21:27:37,501 - INFO -   D3: Start = 30.0, Finish = 55.0
+2025-02-02 21:27:37,501 - INFO -   D4: Start = 60.0, Finish = 140.0
+2025-02-02 21:27:37,501 - INFO -   D5: Start = 140.0, Finish = 160.0
+2025-02-02 21:27:37,501 - INFO -   D6: Start = 140.0, Finish = 170.0
+2025-02-02 21:27:37,501 - INFO -   D7: Start = 170.0, Finish = 210.0
+2025-02-02 21:27:37,502 - INFO -   D8: Start = 210.0, Finish = 220.0
+2025-02-02 21:27:37,502 - INFO -   E: Start = 18.0, Finish = 30.0
+2025-02-02 21:27:37,502 - INFO -   F: Start = 220.0, Finish = 240.0
+2025-02-02 21:27:37,502 - INFO -   G: Start = 220.0, Finish = 245.0
+2025-02-02 21:27:37,502 - INFO -   H: Start = 245.0, Finish = 260.0
+2025-02-02 21:27:37,502 - INFO - Project Completion Time: 260.0
+2025-02-02 21:27:37,502 - INFO - 
+Latest Start (LS), Latest Finish (LF), and Slack:
+2025-02-02 21:27:37,502 - INFO -   A: LS = 0.0, LF = 10.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   B: LS = 198.0, LF = 213.0, Slack = 198.0
+2025-02-02 21:27:37,502 - INFO -   C: LS = 205.0, LF = 213.0, Slack = 195.0
+2025-02-02 21:27:37,502 - INFO -   D1: LS = 10.0, LF = 30.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   D2: LS = 30.0, LF = 60.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   D3: LS = 35.0, LF = 60.0, Slack = 5.0
+2025-02-02 21:27:37,502 - INFO -   D4: LS = 60.0, LF = 140.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   D5: LS = 190.0, LF = 210.0, Slack = 50.0
+2025-02-02 21:27:37,502 - INFO -   D6: LS = 140.0, LF = 170.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   D7: LS = 170.0, LF = 210.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   D8: LS = 210.0, LF = 220.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   E: LS = 213.0, LF = 225.0, Slack = 195.0
+2025-02-02 21:27:37,502 - INFO -   F: LS = 225.0, LF = 245.0, Slack = 5.0
+2025-02-02 21:27:37,502 - INFO -   G: LS = 220.0, LF = 245.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO -   H: LS = 245.0, LF = 260.0, Slack = 0.0
+2025-02-02 21:27:37,502 - INFO - 
+Critical Path:
+2025-02-02 21:27:37,502 - INFO -   A -> D1 -> D2 -> D4 -> D6 -> D7 -> D8 -> G -> H
+2025-02-02 21:27:37,502 - INFO - 
+Cost Details (per task):
+2025-02-02 21:27:37,502 - INFO -   A: Cost = $1000.00
+2025-02-02 21:27:37,502 - INFO -   B: Cost = $1500.00
+2025-02-02 21:27:37,502 - INFO -   C: Cost = $800.00
+2025-02-02 21:27:37,502 - INFO -   D1: Cost = $4000.00
+2025-02-02 21:27:37,503 - INFO -   D2: Cost = $3000.00
+2025-02-02 21:27:37,503 - INFO -   D3: Cost = $5000.00
+2025-02-02 21:27:37,503 - INFO -   D4: Cost = $16000.00
+2025-02-02 21:27:37,503 - INFO -   D5: Cost = $2000.00
+2025-02-02 21:27:37,503 - INFO -   D6: Cost = $3000.00
+2025-02-02 21:27:37,503 - INFO -   D7: Cost = $4000.00
+2025-02-02 21:27:37,503 - INFO -   D8: Cost = $1000.00
+2025-02-02 21:27:37,503 - INFO -   E: Cost = $2400.00
+2025-02-02 21:27:37,503 - INFO -   F: Cost = $4000.00
+2025-02-02 21:27:37,503 - INFO -   G: Cost = $5000.00
+2025-02-02 21:27:37,503 - INFO -   H: Cost = $1500.00
+2025-02-02 21:27:37,503 - INFO - Total Project Cost: $54200.0
+2025-02-02 21:27:37,503 - INFO - 
+Peak Worker Requirements (by Role):
+2025-02-02 21:27:37,503 - INFO -   projectManager: 2 concurrent workers
+2025-02-02 21:27:37,503 - INFO -   frontendDeveloper: 1 concurrent workers
+2025-02-02 21:27:37,503 - INFO -   backendDeveloper: 2 concurrent workers
+2025-02-02 21:27:37,503 - INFO -   dataEngineer: 2 concurrent workers
+2025-02-02 21:27:37,503 - INFO -   dataScientist: 1 concurrent workers
+2025-02-02 21:27:37,503 - INFO - 
+--- Worst Scenario ---
+2025-02-02 21:27:37,528 - INFO - LP Status: Optimal
+2025-02-02 21:27:37,529 - INFO - Earliest Schedule (Start, Finish):
+2025-02-02 21:27:37,529 - INFO -   A: Start = 0.0, Finish = 30.0
+2025-02-02 21:27:37,529 - INFO -   B: Start = 0.0, Finish = 45.0
+2025-02-02 21:27:37,529 - INFO -   C: Start = 30.0, Finish = 54.0
+2025-02-02 21:27:37,529 - INFO -   D1: Start = 30.0, Finish = 90.0
+2025-02-02 21:27:37,529 - INFO -   D2: Start = 90.0, Finish = 180.0
+2025-02-02 21:27:37,529 - INFO -   D3: Start = 90.0, Finish = 165.0
+2025-02-02 21:27:37,529 - INFO -   D4: Start = 180.0, Finish = 420.0
+2025-02-02 21:27:37,529 - INFO -   D5: Start = 420.0, Finish = 480.0
+2025-02-02 21:27:37,529 - INFO -   D6: Start = 420.0, Finish = 510.0
+2025-02-02 21:27:37,529 - INFO -   D7: Start = 510.0, Finish = 630.0
+2025-02-02 21:27:37,529 - INFO -   D8: Start = 630.0, Finish = 660.0
+2025-02-02 21:27:37,529 - INFO -   E: Start = 54.0, Finish = 90.0
+2025-02-02 21:27:37,529 - INFO -   F: Start = 660.0, Finish = 720.0
+2025-02-02 21:27:37,529 - INFO -   G: Start = 660.0, Finish = 735.0
+2025-02-02 21:27:37,529 - INFO -   H: Start = 735.0, Finish = 780.0
+2025-02-02 21:27:37,529 - INFO - Project Completion Time: 780.0
+2025-02-02 21:27:37,529 - INFO - 
+Latest Start (LS), Latest Finish (LF), and Slack:
+2025-02-02 21:27:37,529 - INFO -   A: LS = 0.0, LF = 30.0, Slack = 0.0
+2025-02-02 21:27:37,529 - INFO -   B: LS = 594.0, LF = 639.0, Slack = 594.0
+2025-02-02 21:27:37,529 - INFO -   C: LS = 615.0, LF = 639.0, Slack = 585.0
+2025-02-02 21:27:37,529 - INFO -   D1: LS = 30.0, LF = 90.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   D2: LS = 90.0, LF = 180.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   D3: LS = 105.0, LF = 180.0, Slack = 15.0
+2025-02-02 21:27:37,530 - INFO -   D4: LS = 180.0, LF = 420.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   D5: LS = 570.0, LF = 630.0, Slack = 150.0
+2025-02-02 21:27:37,530 - INFO -   D6: LS = 420.0, LF = 510.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   D7: LS = 510.0, LF = 630.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   D8: LS = 630.0, LF = 660.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   E: LS = 639.0, LF = 675.0, Slack = 585.0
+2025-02-02 21:27:37,530 - INFO -   F: LS = 675.0, LF = 735.0, Slack = 15.0
+2025-02-02 21:27:37,530 - INFO -   G: LS = 660.0, LF = 735.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO -   H: LS = 735.0, LF = 780.0, Slack = 0.0
+2025-02-02 21:27:37,530 - INFO - 
+Critical Path:
+2025-02-02 21:27:37,530 - INFO -   A -> D1 -> D2 -> D4 -> D6 -> D7 -> D8 -> G -> H
+2025-02-02 21:27:37,530 - INFO - 
+Cost Details (per task):
+2025-02-02 21:27:37,530 - INFO -   A: Cost = $3000.00
+2025-02-02 21:27:37,530 - INFO -   B: Cost = $4500.00
+2025-02-02 21:27:37,530 - INFO -   C: Cost = $2400.00
+2025-02-02 21:27:37,530 - INFO -   D1: Cost = $12000.00
+2025-02-02 21:27:37,530 - INFO -   D2: Cost = $9000.00
+2025-02-02 21:27:37,530 - INFO -   D3: Cost = $15000.00
+2025-02-02 21:27:37,530 - INFO -   D4: Cost = $48000.00
+2025-02-02 21:27:37,530 - INFO -   D5: Cost = $6000.00
+2025-02-02 21:27:37,530 - INFO -   D6: Cost = $9000.00
+2025-02-02 21:27:37,530 - INFO -   D7: Cost = $12000.00
+2025-02-02 21:27:37,530 - INFO -   D8: Cost = $3000.00
+2025-02-02 21:27:37,530 - INFO -   E: Cost = $7200.00
+2025-02-02 21:27:37,530 - INFO -   F: Cost = $12000.00
+2025-02-02 21:27:37,530 - INFO -   G: Cost = $15000.00
+2025-02-02 21:27:37,530 - INFO -   H: Cost = $4500.00
+2025-02-02 21:27:37,530 - INFO - Total Project Cost: $162600.0
+2025-02-02 21:27:37,530 - INFO - 
+Peak Worker Requirements (by Role):
+2025-02-02 21:27:37,530 - INFO -   projectManager: 2 concurrent workers
+2025-02-02 21:27:37,531 - INFO -   frontendDeveloper: 1 concurrent workers
+2025-02-02 21:27:37,531 - INFO -   backendDeveloper: 2 concurrent workers
+2025-02-02 21:27:37,531 - INFO -   dataEngineer: 2 concurrent workers
+2025-02-02 21:27:37,531 - INFO -   dataScientist: 1 concurrent workers
+2025-02-02 21:27:37,531 - INFO - 
+Results have been logged to 'project_schedule.log'.
